@@ -60,7 +60,7 @@ const LoadingScreen = ({ onComplete }) => {
               <div className="text-center">
                 <span className="font-display text-3xl text-champagne font-bold">S</span>
                 <span className="font-script text-champagne/60 text-sm mx-1">&</span>
-                <span className="font-display text-3xl text-champagne font-bold">R</span>
+                <span className="font-display text-3xl text-champagne font-bold">J</span>
               </div>
             </div>
           </motion.div>
