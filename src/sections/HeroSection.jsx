@@ -172,37 +172,38 @@ const HeroSection = ({ onOpenInvitation }) => {
         </motion.h2>
 
         {/* Names with enhanced shimmer */}
-        <motion.h1
-          initial={{ opacity: 0, y: 40, scale: 0.9 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 1.2, delay: 0.9 }}
-          className="font-display font-bold text-5xl md:text-7xl lg:text-8xl text-ivory mb-2 tracking-wide"
-        >
-          <span className="text-shimmer relative inline-block">
-            {WEDDING_DATA.groom.name}
-            <motion.span
-              className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
-              animate={{ x: ['-100%', '100%'] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "linear", delay: 1 }}
-            />
-          </span>
-          <span className="font-script text-champagne text-3xl md:text-5xl mx-3 md:mx-5 inline-block align-middle relative">
-            <motion.span
-              animate={{ scale: [1, 1.2, 1] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            >
-              &
-            </motion.span>
-          </span>
-          <span className="text-shimmer relative inline-block">
-            {WEDDING_DATA.bride.name}
-            <motion.span
-              className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
-              animate={{ x: ['-100%', '100%'] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "linear", delay: 2 }}
-            />
-          </span>
-        </motion.h1>
+       {/* Names with enhanced shimmer - Fully Responsive */}
+<motion.h1
+  initial={{ opacity: 0, y: 40, scale: 0.9 }}
+  animate={{ opacity: 1, y: 0, scale: 1 }}
+  transition={{ duration: 1.2, delay: 0.9 }}
+  className="font-display font-bold text-ivory mb-2 tracking-wide flex flex-wrap items-center justify-center gap-1 sm:gap-2 px-2 sm:px-4"
+>
+  <span className="text-shimmer relative inline-block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
+    {WEDDING_DATA.groom.name}
+    <motion.span
+      className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
+      animate={{ x: ['-100%', '100%'] }}
+      transition={{ duration: 3, repeat: Infinity, ease: "linear", delay: 1 }}
+    />
+  </span>
+  <span className="font-script text-champagne text-2xl sm:text-3xl md:text-4xl lg:text-5xl mx-1 sm:mx-2 md:mx-3 inline-block align-middle relative">
+    <motion.span
+      animate={{ scale: [1, 1.2, 1] }}
+      transition={{ duration: 2, repeat: Infinity }}
+    >
+      &
+    </motion.span>
+  </span>
+  <span className="text-shimmer relative inline-block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
+    {WEDDING_DATA.bride.name}
+    <motion.span
+      className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
+      animate={{ x: ['-100%', '100%'] }}
+      transition={{ duration: 3, repeat: Infinity, ease: "linear", delay: 2 }}
+    />
+  </span>
+</motion.h1>
 
         {/* Date with decorative elements */}
         <motion.p
