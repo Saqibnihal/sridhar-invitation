@@ -13,7 +13,7 @@ export const WEDDING_DATA = {
   },
   groom: {
     name: 'Sridhar',
-    fullName: 'Sridhar Patrick',
+    fullName: 'Sridhar',
     parents: 'Son of Mr. Rajendran & Mrs. Veeramani',
     intro: 'A heart of gold with an unwavering spirit. His love for life is matched only by his love for Jenny.',
     image: groomImage,
@@ -44,7 +44,7 @@ export const STORY_MILESTONES = [
   {
     id: 3,
     title: 'The Proposal',
-    date: 'September 15, 2025',
+    date: 'August 15, 2025',
     description:
       'What started as a friendship had blossomed into love. On September 15, 2025, they took the next step and promised to walk through life together, beginning their journey toward forever.',
     icon: 'ring',
