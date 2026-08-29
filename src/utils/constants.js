@@ -1,5 +1,6 @@
 // import brideImage from '';
-import groomImage from '../assets/sridhar.jpeg';
+import groomImage from '../assets/boy.jpeg';
+import brideImage from '../assets/girl.jpeg';
 
 // Wedding Data Constants
 export const WEDDING_DATA = {
@@ -8,7 +9,7 @@ export const WEDDING_DATA = {
     fullName: 'Jennifer Fatima',
     parents: 'Daughter of Mr. John Damien & Mrs. Lourdu Mercy',
     intro: 'A soul full of grace, kindness, and endless love. Her smile lights up every room she enters.',
-    image: null,
+    image: brideImage,
   },
   groom: {
     name: 'Sridhar',
